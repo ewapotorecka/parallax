@@ -1,5 +1,5 @@
-import React, { useRef } from 'react'
-import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax'
+import React from 'react'
+import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import styled from 'styled-components';
 import unicorn from '../assets/unicorn.png';
 import unicornSad from '../assets/unicorn2.png';
@@ -38,9 +38,6 @@ export default function App() {
 		</ParallaxLayer>
 		<ParallaxLayer offset={0} speed={-1}>
 			<img src={unicornSad} width={'100px'} style={{marginTop: '400px', marginRight: '300px'}}/>
-		</ParallaxLayer>
-		<ParallaxLayer offset={0} speed={0.5}>
-			<img src={unicornSad} width={'100px'} style={{marginTop: '400px', marginRight: '200px'}}/>
 		</ParallaxLayer>
 		<ParallaxLayer offset={1} speed={-0.3}>
 			<img src={unicorn} width={'100px'} style={{marginTop: '400px', marginRight: '300px'}}/>

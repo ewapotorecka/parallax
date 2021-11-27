@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import ParallaxElement from './components/ParallaxElement';
+import MyParallax from './components/ReactParallax';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+		<link rel="preconnect" href="https://fonts.googleapis.com"></link>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
+<link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap" rel="stylesheet"></link>
+		<MyParallax/>
+     {/* <ParallaxElement blur={40} strength={140}><p>ddd</p></ParallaxElement> */}
     </div>
   );
 }
